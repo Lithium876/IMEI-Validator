@@ -26,3 +26,9 @@ def ValidateIMEI(number, posistion=None):
 		return "Valid IMEI"
 	else:
 		return "Invalid IMEI"
+
+if __name__ == '__main__':
+	valueA = ValidateIMEI("864224026430067") 
+	valueB = ValidateIMEI("064224026430067", 1) # missing first value 8
+	print(valueA)
+	print(valueB)
