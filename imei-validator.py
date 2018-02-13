@@ -1,3 +1,14 @@
+def nextTen(checkSum):
+	# Finding the next 10
+	nextTenth = checkSum
+	while 1:
+		if nextTenth%10 == 0:
+			break
+		else:
+			nextTenth = nextTenth + 1
+
+	return nextTenth
+
 def calculateCheckSum(number, val):
 	checkSum = 0
 	#loop up to the second to last number in number
