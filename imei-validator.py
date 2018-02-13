@@ -1,3 +1,15 @@
+def calculateCheckSum(number, val):
+	checkSum = 0
+	#loop up to the second to last number in number
+	for i in range(val):
+		#if posistion is even, get the luhns value 
+		if i%2!=0:
+			value = luhnsTable[int(number[i])]
+			checkSum = checkSum + value
+		#else use original value
+		else:
+			checkSum = checkSum + int(number[i])
+
 def ValidateIMEI(number, posistion=None):
 
 	if len(number) < 15:
