@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IMEI Validator</title>
+		<link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+	</head>
+	<body>
+		<div class="container-form">
+			<div class="wrap-form">
+				<form method="POST" action="/" class="form">
+					<span class="form-title">IMEI Validator</span>
+					<p>Use a 0 as a place holder in the position of the missing digit if any</p><br>
+					<div class="wrap-input">
+						<input class="input100" type="number" name="number" placeholder="IMEI" required>
+						<span class="focus-input"></span>
+					</div>
+					<div class="wrap-input">
+						<input class="input100" type="number" name="position" placeholder="Position of Missing value">
+						<span class="focus-input"></span>
+					</div>
+					<div class="container-form-btn">
+						<button class="form-btn">
+						<span>Validate</span>
+						</button>
+					</div>
+				</form>
+				<br><br>
+				<div style="color: #bdbdd3; text-align: center;">   	
+			        <h1>{{result}}</h1>
+			    </div>
+				<br><br><br>
+				<p>Copyright &copy; Lithium Lilly 2018</p>
+			</div>
+		</div>
+
+	</body>
+</html>
